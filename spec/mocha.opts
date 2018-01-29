@@ -1,0 +1,6 @@
+--require ./spec/common.js
+--ui bdd
+--reporter spec
+--colors
+--slow 300
+--timeout 120000
