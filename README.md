@@ -1,13 +1,14 @@
 ## Coding assignment
 
-## Prerequisites
+### Prerequisites
 
   - Node.js
   - FFMPEG (only if you make it to last test)
 
-## Required knowledge
-- Basic understanding of Node.js and Javascript
-- You need to know how to use the command line
+### Required knowledge
+
+  - Basic understanding of Node.js and Javascript
+  - You need to know how to use the command line
 
 ## The challenge
 
@@ -15,7 +16,7 @@ The coding assignment is simple and challenging at the same time:
 
 **Build a REST API server that will pass all the `npm tests` scripts without using ANY third party packages**
 
-## Why no third party packages?
+### Why no third party packages?
 
 We want to be able assess your actual coding skills and code design choices. The more code you write yourselve, the better we are able to judge your knowledge and skill as objective as possible. The more `npm` packages you use, the more of your solution will depend off your knowledge of how to implement this packages. Since we want to give everyone a fair chance to participate in this challenge, we have chosen to use as little npm packages as possible. 
 
@@ -23,23 +24,25 @@ There is 1 exception to this rule: all the packages that are already added to th
 
 **Important**: You are allowed to use Node.js core API pacakges like `http` or `path`. Every 'package' that you do not need to install using `npm` or `yarn` is allowed.
 
-## Where we judge you on
+### Please take into consideration:
 
-1. If the code actually passes the written npm tests
+Quality is more important then quantity. Only fully implemented solutions will be judged and considered. It is very well possible that you are only able to pass the first two tests. Please, do not worry about this. We will taken into account the code that passed one of the tests:
+
+1. The code should passes the written npm tests
 2. To what extend your code is ['DRY'](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
-Please note, quality is more important then quantity. Only fully implemented solutions will be judged and considered. It is very well possible that you are only able to pass the first two tests. Please, do not worry about this. We will judge you only on the code that is finished. 
-
-## How to share your progress with us?
+### How to share your progress with us?
 
 - Please fork this repository and push to the forked repo in your Github account
 - Invite me (Github username: ronxjansen) to the repo if you are using a private repo
 
-## Video
+### Video
+
+In the last two tests you will need a video which you can download and transcode. You can find the video here:
 
 - https://s3.eu-central-1.amazonaws.com/flipbase-coding-challenge/bunny.mp4
 
-## To pass the last test you need: FFMPEG
+### To pass the last test you need: FFMPEG
 
 To pass the last test, you need to the download the approriate FFMPEG package locally to your computer. Please find different packages for Linux, Mac and Windows on this webpage: https://www.ffmpeg.org/download.html.
 
@@ -47,7 +50,7 @@ When you run your Node.js programm, please use the `FFMPEG_PATH` environment var
 
     `FFMPEG_PATH=/Users/ronjansen/Downloads/ffmpeg npm test`
 
-## What the heck is FFMPEG?
+### What the heck is FFMPEG?
 
 FFMPEG is a really cool tool which you can use to retrieve metadata from videos files and more importantly: to transcode videos. When you want to publish video's on the web (like we do), and you want your users to be able to view the videos regardless the browser they are using, then you need to have multiple video formats of the same video file. Internet Explorer only accepts MP4 videos; Firefox likes OGV videos and Chrome diggs Webm encoded videos. 
 
