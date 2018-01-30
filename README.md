@@ -3,7 +3,7 @@
 ### Prerequisites
 
   - Node.js
-  - FFMPEG (only if you make it to last test)
+  - FFMPEG (only if you make it to the last test)
 
 ### Required knowledge
 
@@ -22,19 +22,16 @@ We want to be able assess your actual coding skills and code design choices. The
 
 There is 1 exception to this rule: all the packages that are already added to the package.json file.
 
-**Important**: You are allowed to use Node.js core API pacakges like `http` or `path`. Every 'package' that you do not need to install using `npm` or `yarn` is allowed.
+**Important**: You are allowed to use Node.js core API packages like `http` or `path`. Every 'package' that you do not need to install using `npm` or `yarn` is allowed.
 
 ### Please take into consideration:
 
-Quality is more important then quantity. Only fully implemented solutions will be judged and considered. It is very well possible that you are only able to pass the first two tests. Please, do not worry about this. We will taken into account the code that passed one of the tests:
-
-1. The code should passes the written npm tests
-2. To what extend your code is ['DRY'](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+Quality is more important then quantity. Only fully implemented solution that will pass a test will be judged. It is very well possible that you are only able to pass the first two tests. Please, do not worry about this. We will taken into account the code that passed one or more of the tests. Additionaly, we will pay attention to what extend your code is ['DRY'](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
 ### How to share your progress with us?
 
-- Please fork this repository and push to the forked repo in your Github account
-- Invite me (Github username: ronxjansen) to the repo if you are using a private repo
+- Please fork this repository and push your contribution to the forked repo in your Github account
+- Invite Ron (Github username: ronxjansen) to the repo if you are using a private repo
 
 ### Video
 
