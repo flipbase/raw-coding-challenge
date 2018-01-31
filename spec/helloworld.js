@@ -1,8 +1,13 @@
+
 const req = require('supertest');
 const fs = require('fs');
 const app = require('./../app/index');
 const John = require('./../fixtures/John.json')
 const Karen = require('./../fixtures/Karen.json')
+
+
+
+
 
 describe('GET /hello-world', () => {
   it('should return a JSON object with the property `hello` and value `world`', (done) => {
@@ -13,6 +18,15 @@ describe('GET /hello-world', () => {
     })
   })
 })
+
+
+// request('GET, /hello-world', (done) => {
+//     req(server).get('/hello-world').end((err, res) => {
+//       let body = {"Hello":"world"};
+//       res.status(200).send(body);
+//       done(err);
+//     });
+// });
 
 describe('GET /hello-to-admins-only', (done) => {
   it('should return a 401 status code when no `username` and `password` are provided in the body of the request', (done) => {
@@ -29,6 +43,7 @@ describe('GET /hello-to-admins-only', (done) => {
       .end(done)
   })
 
+  
   it('should allow access for Karen and return a 200 status code, plus return JSON object with the `message` property and value `Hello Karen` ', (done) => {
     req(app).get('/hello-to-admins-only')
       .send({username: Karen.username, password: Karen.username})
