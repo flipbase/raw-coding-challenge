@@ -1,10 +1,9 @@
-
-
-module.exports = function(pathname, method, request) {
+module.exports = function(pathname, method, body) {
+    console.log('logging bdddd');
     if (method === 'GET') {
-        return result = require('.'+ pathname).get(request);
+         return require('.'+ pathname).get();
     }
     if (method === 'POST') {
-        return result = require('.' + pathname).post(request);
+        return result = require('.' + pathname).post(body);
     }
 }
