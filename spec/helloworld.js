@@ -19,15 +19,6 @@ describe('GET /hello-world', () => {
   })
 })
 
-
-// request('GET, /hello-world', (done) => {
-//     req(server).get('/hello-world').end((err, res) => {
-//       let body = {"Hello":"world"};
-//       res.status(200).send(body);
-//       done(err);
-//     });
-// });
-
 describe('GET /hello-to-admins-only', (done) => {
   it('should return a 401 status code when no `username` and `password` are provided in the body of the request', (done) => {
     req(app).get('/hello-to-admins-only')
